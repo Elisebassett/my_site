@@ -1,5 +1,6 @@
 document.addEventListener("turbolinks:load", function() {
 
+
   console.log("Loading particles.js");
 
   particlesJS('particles-js',

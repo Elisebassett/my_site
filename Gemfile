@@ -26,6 +26,8 @@ gem 'jquery-rails'
 # Site Features
 gem 'devise'
 gem 'paperclip'
+gem 'materialize-sass'
+gem 'material_icons'
 
 # Production
 # Use Redis adapter to run Action Cable in production

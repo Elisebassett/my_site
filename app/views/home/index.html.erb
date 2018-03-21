@@ -1,60 +1,65 @@
 <div class="home">
-	<div class="title">
+	<div class="title row">
 		<h1>Oh hey there!</h1>
 	</div>
-	<div id="particles-js"></div>
+	<div class="parallax-container">
+		<div class="parallax" id="particles-js"></div>
+  </div>
 </div>
 
 <!-- About Page -->
 
 <div class="about-me">
-	<h2>About Me</h2>
-	<p>An enthusiastic and passionate problem solver, I work hard and learn hard. My core driver is the thirst to push forward creative innovation and to make a positive impact on society.</p>
+	<h2 class="row">About Me</h2>
+	<p class="row">An enthusiastic and passionate problem solver, I work hard and learn hard. My core driver is the thirst to push forward creative innovation and to make a positive impact on society.</p>
 
-	<a href="#">My Resume</a>
+	<a href="#" class="row">My Resume</a>
 
 	<!-- Services -->
-	<div class="service">
-		<%= image_tag	"html" %>
-		<h4 class="service-title">HTML & CSS</h4>
-	</div>
-
-	<div class="service">
-		<%= image_tag	"javascript" %>
-		<h4 class="service-title">Javascript</h4>
-	</div>
-	
-	<div class="service">
-		<%= image_tag	"ruby" %>
-		<h4 class="service-title">Ruby</h4>
-	</div>
-	
-	<div class="service">
-		<%= image_tag	"cc" %>
-		<h4 class="service-title">Creative Cloud</h4>
-	</div>
-
-	<div class="service">
-		<%= image_tag	"writing" %>
-		<h4 class="service-title">Copy Writing</h4>
+	<div class="row">
+		<div class="service col s2">
+			<%= image_tag	"html" %>
+			<h4 class="service-title">HTML & CSS</h4>
+		</div>
+		
+		<div class="service col s2">
+			<%= image_tag	"javascript" %>
+			<h4 class="service-title">Javascript</h4>
+		</div>
+		
+		<div class="service col s2">
+			<%= image_tag	"ruby" %>
+			<h4 class="service-title">Ruby</h4>
+		</div>
+		
+		<div class="service col s2">
+			<%= image_tag	"cc" %>
+			<h4 class="service-title">Creative Cloud</h4>
+		</div>
+		
+		<div class="service col s2">
+			<%= image_tag	"writing" %>
+			<h4 class="service-title">Copy Writing</h4>
+		</div>
 	</div>
 
 </div>
 
-<button>Contact Me</button>
+<div class="row">
+	<button>Contact Me</button>
+</div>
 
 <!-- Portfolio -->
 <div class="portfolio">
-	<h2>My Work</h2>
-
+	<h2 class="row">My Work</h2>
 </div>
 
 <!-- Blog -->
 <div class="blog">
-	<h2>Blog</h2>
+	<h2 class="row">Blog</h2>
 </div>
 
 <!-- Contact Me -->
 <div class="contact">
-	<h2>Contact Me</h2>
+	<h2 class="row">Contact Me</h2>
 </div>
