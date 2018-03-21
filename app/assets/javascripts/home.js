@@ -6,20 +6,20 @@ document.addEventListener("turbolinks:load", function() {
     {
       "particles": {
         "number": {
-          "value": 80,
+          "value": 100,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": "#d4145a"
         },
         "shape": {
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#000000"
+            "color": "#d4145a"
           },
           "polygon": {
             "nb_sides": 5
@@ -53,7 +53,7 @@ document.addEventListener("turbolinks:load", function() {
         "line_linked": {
           "enable": true,
           "distance": 150,
-          "color": "#ffffff",
+          "color": "#d4145a",
           "opacity": 0.4,
           "width": 1
         },
@@ -99,10 +99,10 @@ document.addEventListener("turbolinks:load", function() {
             "speed": 3
           },
           "repulse": {
-            "distance": 200
+            "distance": 150
           },
           "push": {
-            "particles_nb": 4
+            "particles_nb": 40
           },
           "remove": {
             "particles_nb": 2
