@@ -24,8 +24,6 @@ gem 'jbuilder', '~> 2.5' # Build JSON APIs with ease. Read more: https://github.
 gem 'jquery-rails'
 
 # Site Features
-gem 'devise'
-gem 'paperclip'
 gem 'materialize-sass'
 gem 'material_icons'
 
