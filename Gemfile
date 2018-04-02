@@ -25,7 +25,7 @@ gem 'jquery-rails'
 
 # Site Features
 gem 'devise'
-gem 'paperclip'
+gem 'paperclip', '~> 5.2.0'
 gem 'materialize-sass'
 gem 'material_icons'
 
