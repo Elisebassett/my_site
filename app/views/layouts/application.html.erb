@@ -9,12 +9,7 @@
   </head>
 
   <body>
-    <ul id="slide-out" class="side-nav">
-      <% if current_user %>
-      <li><%= link_to "Dashboard", user_path(current_user) %></li>
-      <li><%= link_to "Edit User", edit_user_registration_path %></li>
-      <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
-    <% end %>
+    <ul id="slide-out" class="side-nav"> 
       <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
       <li><a href="#!">Second Link</a></li>
       <li><div class="divider"></div></li>
