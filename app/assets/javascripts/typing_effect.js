@@ -1,28 +1,29 @@
 $(document).ready(function(){
- 
-  var x = 0;
+  var x = null;
   var content = '';
   var headEl = $('#head');
   var head = '';
-  var headers = ['Oh, hey there!','Welcome to my Pen!', 'check it out at my website: elisebassett.com']; 
-  var headLength = x;
+  var headers = ['Oh, hey there!','Welcome to my site!', "My name is Elise Bassett. I'm a Full Stack Web Developer"]; 
+  var headLength = 0;
   var lineCount = 0;
   
   function typeHeader() {
+    x = 0;
     head = headers[lineCount];
     headLength = head.length;
-    if(lineCount < head.length) {
-      type();
-    }
     
+    if(lineCount < headers.length) {
+      type();
+      lineCount = lineCount + 1
+    }
+    console.log(lineCount, headers.length);
   }//typeHeader
   
   function type() {
     headEl.html(head.substr(0, x++));
-    if(x < headLength+1) {
+    if(x < head.length + 1) {
       setTimeout(type, 100); 
-      
-    } else {
+    } else if(lineCount < headers.length) {
       erase();
     }
   }//typeEffect
@@ -30,9 +31,11 @@ $(document).ready(function(){
   function erase() {
     content = headEl.html();
     console.log(content);
-    headEl.html(content.substr(0, headLength--));
+    headEl.html(content.substring(0, headLength--));
     if(headLength >= 0) {
       setTimeout(erase, 100);
+    } else if(lineCount < headers.length) {
+      typeHeader();
     }
   }
   
@@ -44,12 +47,6 @@ $(document).ready(function(){
   
   
   setInterval(cursorAnimation, 600);
-  
-  $('#go').click(function(){
-    console.log('clicked');
-    typeHeader();
-    
-  });//click go
- 
-  
+  typeHeader(); 
+
 });
