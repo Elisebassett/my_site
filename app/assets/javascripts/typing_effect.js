@@ -3,7 +3,7 @@ $(document).ready(function(){
   var content = '';
   var headEl = $('#head');
   var head = '';
-  var headers = ['Oh, hey there!','Welcome to my Pen!', 'check it out at my website: elisebassett.com']; 
+  var headers = ['Oh, hey there!','Welcome to my site!', "My name is Elise Bassett. I'm a Full Stack Web Developer"]; 
   var headLength = 0;
   var lineCount = 0;
   
@@ -47,11 +47,6 @@ $(document).ready(function(){
   
   
   setInterval(cursorAnimation, 600);
-  
-  $('#go').click(function(){
-    console.log('clicked');
-    typeHeader();
-  });//click go
- 
+  typeHeader(); 
 
 });
