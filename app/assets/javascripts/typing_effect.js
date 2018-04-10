@@ -2,8 +2,9 @@ $(document).ready(function(){
   var x = null;
   var content = '';
   var headEl = $('#head');
+  var subEl = $('#sub');
   var head = '';
-  var headers = ['Oh, hey there!','Welcome to my site!', "My name is Elise Bassett. I'm a Full Stack Web Developer"]; 
+  var headers = ['Oh, hey there!','Welcome to my site!', "My name is Elise Bassett.", "I'm a Full Stack Web Developer."]; 
   var headLength = 0;
   var lineCount = 0;
   
@@ -23,8 +24,10 @@ $(document).ready(function(){
     headEl.html(head.substr(0, x++));
     if(x < head.length + 1) {
       setTimeout(type, 100); 
-    } else if(lineCount < headers.length) {
+    } else if(lineCount < headers.length - 1) {
       erase();
+    } else if(lineCount = headers.length) {
+
     }
   }//typeEffect
   
@@ -40,7 +43,7 @@ $(document).ready(function(){
   }
   
   function cursorAnimation(){
-    cursor = $('#cursor');
+    cursor = $('.cursor');
     cursor.fadeOut('fast');
     cursor.fadeIn('fast');
   }//cursor animation
