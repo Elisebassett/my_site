@@ -1,0 +1,43 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$pink: '#d4145a'
+
+@mixin header($size) 
+  font-size: $size
+//header mixin
+
+nav 
+  position: fixed
+  background-color: $pink !important
+  z-index: 100
+//nav
+
+#particles-js 
+  width: 100%
+  height: 500px
+  background: #fff
+  z-index: -1
+
+
+.title 
+  position: absolute
+  width: 100%
+  top: 170px 
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 1 
+  text-align: center
+
+
+.head 
+  @include header(50px)
+
+.sub 
+  @include header(30px)
+
+
+.row 
+  padding: 0px 70px
