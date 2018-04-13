@@ -2,8 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// Variables
 $pink: '#d4145a'
+$social: 50px
 
+// Mixins
 @mixin header($size) 
   font-size: $size
 //header mixin
@@ -15,11 +18,12 @@ nav
 //nav
 
 #particles-js 
+  position: fixed
   width: 100%
-  height: 500px
+  height: 100vh
   background: #fff
   z-index: -1
-
+//particles-js
 
 .title 
   position: absolute
@@ -30,14 +34,38 @@ nav
   bottom: 0
   z-index: 1 
   text-align: center
-
+//title
 
 .head 
   @include header(50px)
+//head
 
 .sub 
   @include header(30px)
+//sub
 
+.button
+  z-index: 999
+  margin-top: 10%
 
-.row 
+.pad 
   padding: 0px 70px
+  text-align: center
+//row
+
+.service
+  margin: 0 auto
+
+.social
+  position: fixed
+  top: 30%
+  right: 3px
+  z-index: 3
+  img
+    height: $social
+    width: $social
+    &:hover
+      cursor: pointer
+
+
+
