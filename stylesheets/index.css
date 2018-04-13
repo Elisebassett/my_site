@@ -4,8 +4,9 @@ nav {
   z-index: 100; }
 
 #particles-js {
+  position: fixed;
   width: 100%;
-  height: 500px;
+  height: 100vh;
   background: #fff;
   z-index: -1; }
 
@@ -25,7 +26,26 @@ nav {
 .sub {
   font-size: 30px; }
 
-.row {
-  padding: 0px 70px; }
+.button {
+  z-index: 999;
+  margin-top: 10%; }
+
+.pad {
+  padding: 0px 70px;
+  text-align: center; }
+
+.service {
+  margin: 0 auto; }
+
+.social {
+  position: fixed;
+  top: 30%;
+  right: 3px;
+  z-index: 3; }
+  .social img {
+    height: 50px;
+    width: 50px; }
+    .social img:hover {
+      cursor: pointer; }
 
 /*# sourceMappingURL=index.css.map */
